@@ -17,9 +17,9 @@
                 },3000);
             });
                const getPopcorn=new Promise((resolve,reject)=>{
-                resolve(`popcorn`);
+                resolve(`popcorn`);})
             let ticket= await promiseWifeBringingTicks;
-                console.log('wife:i have ticks');
+                console.log(`wife:i have ${ticket}`);
                 console.log('husband:we should go in');
                 console.log('wife:no i am hungry');
                
@@ -27,15 +27,22 @@
                 console.log(`husband:i got some ${popcorn} `);
                 console.log('husband:we should go in');
                 console.log('wife:i need butter on my popcorn');
+            
+            
+           
               
               let butter=await addButter;
               console.log(`husband:i got some ${butter} on popcorn`);
               console.log('husband:anything else darling');
-              console.log('wife:lets go we are getting late');
+             console.log('i need coke also,iam thirsty!);
+               
+               let coldDrink=await getCoke;
+                console.log(`husband:i got some ${coldDrink} `);
+                console.log('husband:we should go in');
+               console.log('wife:lets go we are getting late');
               console.log('husband:thank you for the reminder*grins*');
-           
-            })
-            } 
+              
+          } 
         preMovie().then((m)=>console.log(m));      
         console.log('person4:shows Ticket');        
         console.log('person5:shows Ticket');        
